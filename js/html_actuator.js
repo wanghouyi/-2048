@@ -51,20 +51,20 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var text = new Array();
-  text[1] = "提出需求"
-  text[2] = "调研分析"
-  text[3] = "开会讨论"
-  text[4] = "原型文档"
-  text[5] = "打回再改"
-  text[6] = "说服开发"
-  text[7] = "内部测试"
-  text[8] = "灰度测试"
-  text[9] = "Beta测试"
-  text[10] = "正式上线"
-  text[11] = "不断迭代"
-  text[12] = "持续运营"
-  text[13] = "产品大卖"
-  text[14] = "辞职创业"
+  text[1] = "汪"
+  text[2] = "厚"
+  text[3] = "义"
+  text[4] = "是"
+  text[5] = "个"
+  text[6] = "超"
+  text[7] = "级"
+  text[8] = "无"
+  text[9] = "敌"
+  text[10] = "潇"
+  text[11] = "洒"
+  text[12] = "大"
+  text[13] = "帅"
+  text[14] = "比"
   var self = this;
   var text2 = function (n) { var r = 0; while (n > 1) r++, n >>= 1; return r; }
 
@@ -144,7 +144,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "你已经是绝对的产品大牛了，没有人可以虐你了!" : "年轻人，还是要提高自己的姿势水平啊！";
+  var message = won ? "小伙子，你找到了真理！" : "年轻人，还是要提高自己的姿势水平啊！";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
@@ -169,7 +169,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-counturl", "https://www.yokeneng.com");
   tweet.textContent = "Tweet";
 
-  var text = "作为一枚产品汪，我被虐了" + this.score + "次！ " +
+  var text = "寻找男神正确描述" + this.score + "次！ " +
              "你也来试试看吧#";
   tweet.setAttribute("data-text", text);
 
