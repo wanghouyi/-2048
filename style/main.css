@@ -1,4 +1,4 @@
-@import url(fonts/clear-sans.css);
+﻿@import url(fonts/clear-sans.css);
 html, body {
   margin: 0;
   padding: 0;
@@ -16,11 +16,11 @@ body {
   display: block;
   clear: both; 
 }
-
 .qrcode {
   padding-top: 14px;
   text-align: center;
 }
+
  
 h1.title {
       background-image: url(https://o84ufofgw.qnssl.com/kenengba/dog.png);
